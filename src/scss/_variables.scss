@@ -1,0 +1,13 @@
+$logoText: #FDF7FA;
+$linkText: #474747;
+$text: #8BA6A9;
+
+.link{
+  &__decoration{
+
+    &--none{
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
