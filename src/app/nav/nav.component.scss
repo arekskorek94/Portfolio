@@ -3,19 +3,19 @@
   background-color: transparent;
   position: fixed;
   min-height: 50px;
-  max-width: 1100px;
   width: 100%;
   top: 0;
   z-index: 100;
 }
 .navigation {
   display: grid;
+  box-sizing: border-box;
   grid-template-columns: 200px 1fr;
   font-family:  cursive;
   font-weight: bold;
-  max-width: 100%;
+  max-width: 1100px;
   color: $logoText;
-  margin: 0 60px;
+  margin: auto;
   &__logo{
     margin:auto;
     font-size: x-large;
@@ -28,6 +28,8 @@
     align-items: flex-start;
     justify-content: flex-end;
     color: $linkText;
+    padding: 1em;
+    width: 100%;
     &__item {
 
       text-decoration: none;
