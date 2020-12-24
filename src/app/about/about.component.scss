@@ -10,6 +10,7 @@
   min-height: 700px;
   background: url(../../assets/img/meCard-sepia.jpg) right no-repeat;
   position: relative;
+  font-family: Garamond, serif;
   color: $text;
 }
 
@@ -22,7 +23,9 @@
   padding-right: 300px;
   
   &__text{
-    font-family: Garamond, serif;
+    // font-family: Garamond, serif;
+    line-height: 32px;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.66);
   }
 }
 
