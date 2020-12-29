@@ -5,30 +5,63 @@
   display: flex;
   // justify-content: center;
   align-items: center;
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
   min-height: 700px;
-  background: url(../../assets/img/meCard-sepia.jpg) right no-repeat;
+  background: url(../../assets/img/meCard-white1.png) right no-repeat;
   position: relative;
   font-family: Garamond, serif;
   color: $text;
 }
 
 .header{
-  padding-left: 50px;
+  // padding-left: 50px;
+  border-bottom: 4px solid #000000;
+  width: 271px;
+  font-size: xx-large;
+
+
+  // padding-bottom: 0;
+  &__text{
+    // border-bottom: 4px solid #000000;
+    box-sizing:border-box;
+    margin-bottom: 0px;
+  }
 }
 
 .content{
   font-size: 20px;
-  padding-right: 300px;
-  
+  padding-right: 400px;
+
+
   &__text{
     // font-family: Garamond, serif;
+    padding-top: 20px;
     line-height: 32px;
-    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.66);
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.66);
   }
 }
 
+.tabs{
+display: grid;
+grid-template-columns: 100px 1fr;
+  &__menu{
+
+    &__list{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      &--item{
+        text-decoration: none;
+      }
+    }
+  }
+}
 img.animated {
   animation: filter-animation 5s infinite;
 }
