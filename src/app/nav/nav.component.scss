@@ -10,17 +10,21 @@
 .navigation {
   display: grid;
   box-sizing: border-box;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 300px 1fr;
   font-family:  cursive;
   font-weight: bold;
   max-width: 1100px;
   color: $logoText;
   margin: auto;
   &__logo{
-    line-height: 8px;
+    line-height: 0px;
     margin: 0 auto;
+    font-weight: bold;
     // font-size: x-large;
     text-decoration: solid;
+  }
+  &__position{
+    margin: 0;
   }
   &__list {
     list-style: none;

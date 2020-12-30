@@ -3,27 +3,23 @@
 
 .about{
   display: flex;
-  // justify-content: center;
-  align-items: center;
+  padding-top: 50px;
   max-width: 1100px;
   width: 100%;
-  min-height: 700px;
-  background: url(../../assets/img/meCard-white1.png) right no-repeat;
+  min-height: 600px;
+  background: url(../../assets/img/meCard-white1.png) right bottom no-repeat;
   position: relative;
   font-family: Garamond, serif;
   color: $text;
 }
 
 .header{
-  // padding-left: 50px;
   border-bottom: 4px solid #000000;
-  width: 271px;
-  font-size: xx-large;
-
-
-  // padding-bottom: 0;
+  width: 200px;
+  font-size: xx-large !important;
+  font-family: Garamond, serif;
   &__text{
-    // border-bottom: 4px solid #000000;
+    font-weight: bold;
     box-sizing:border-box;
     margin-bottom: 0px;
   }
@@ -32,21 +28,39 @@
 .content{
   font-size: 20px;
   padding-right: 400px;
-
-
   &__text{
-    // font-family: Garamond, serif;
     padding-top: 20px;
     line-height: 32px;
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.66);
   }
 }
 
+.education{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  column-gap: 20px;
+  &__border{
+    border-right: 2px solid #000000;
+    padding-right: 5px;
+  }
+  &__date{
+    font-size: small;
+  }
+}
+
+.education * {
+  margin: 0;
+  line-height: 20px;
+}
+
 .tabs{
 display: grid;
-grid-template-columns: 100px 1fr;
+grid-template-columns: 75px 1fr;
+column-gap: 10px;
+// min-height: 400px;
   &__menu{
 
+    border-right: 2px solid #000000;
     &__list{
       list-style: none;
       display: flex;
@@ -55,9 +69,14 @@ grid-template-columns: 100px 1fr;
       align-items: center;
       margin: 0;
       padding: 0;
-      height: 100%;
+      min-height:480;
       &--item{
         text-decoration: none;
+        &:hover{
+
+          // border: 2px solid #000000;
+          border-radius: 25%;
+        }
       }
     }
   }
@@ -77,5 +96,16 @@ img.animated {
 
   100% {
     filter: sepia(0) saturate(2);
+  }
+}
+
+@media (max-width: 1050px){
+  .about{
+    background-size: 300px 461px;
+    background-position: right;
+  }
+
+  .content {
+    padding-right: 270px;
   }
 }

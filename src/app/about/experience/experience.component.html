@@ -1,0 +1,26 @@
+<div class="header">
+  <h1 class="header__text">Experience</h1>
+</div>
+<div class="content__text">
+  <div class="job">
+    <!-- <div>
+      <h4 class="job__position">Programista aplikacyjny</h4>
+      <h5 class="job__name">Urząd państwowy</h5>
+      <p>12.2018 - obecnie</p>
+    </div> -->
+    <div>
+      <button type="button"
+      class="job__button"
+      *ngFor='let experience of experiences'
+      [ngClass]="{'active': experience?.id === selectedExperience?.id}"
+      (click)='onSelectedExperience(experience)'>
+        <h5 class="job__position">{{experience.name}}</h5>
+        <p class="job__name">{{experience.corporation}}</p>
+        <p class="job__periodOfWork">{{experience.periodOfWork}}</p>
+      </button>
+    </div>
+    <div class="job__responsibilities">
+      <app-responsibilities></app-responsibilities>
+    </div>
+  </div>
+</div>
