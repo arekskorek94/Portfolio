@@ -1,0 +1,94 @@
+.header{
+  // padding-left: 50px;
+  border-bottom: 4px solid #000000;
+  width: 200px;
+  font-size: xx-large !important;
+  font-family: Garamond, serif;
+
+  // padding-bottom: 0;
+  &__text{
+    // border-bottom: 4px solid #000000;
+    font-weight: bold;
+    box-sizing:border-box;
+    margin-bottom: 0px;
+  }
+}
+
+.content{
+  font-size: 20px;
+  padding-right: 400px;
+  font-family: Garamond, serif;
+
+  &__text{
+    font-family: Garamond, serif;
+    padding-top: 20px;
+    line-height: 32px;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.66);
+  }
+}
+
+.job{
+  display: grid;
+  grid-template-columns: 170px 1fr;
+
+  &__position{
+    font-weight: bolder;
+    font-size: medium;
+    margin:0;
+  }
+
+  &__name{
+    font-size: small;
+    margin:0;
+    line-height: 20px;
+  }
+
+  &__periodOfWork{
+    font-size: x-small;
+    margin:0;
+    line-height: 20px;
+  }
+  &__button{
+    box-sizing: border-box;
+    padding: 12px 0;
+    width: 100%;
+    border-style: none;
+    border: .3px groove #8B94A3;
+    border-radius: 10px;
+    background-color: transparent;
+    margin: 3px;
+    &:focus{
+      outline: none;
+    }
+    &:hover{
+      background-color: #454851;
+      // border: .02px groove #000000;
+      color: #ffffff;
+      border-radius: 10px;
+    }
+  }
+  &__responsibilities{
+    width: 100%;
+  }
+}
+
+.active{
+
+  background-color: #454851;
+  color: #ffffff;
+  border: .3px groove #8B94A3;
+  border-radius: 10px;
+}
+
+@media (max-width:600px){
+  .job{
+    // display: grid;
+    grid-template-columns: none;
+    grid-template-rows: auto 1fr;
+    &__button{
+      width: auto;
+      padding: 12px 12px;
+    }
+  }
+
+}

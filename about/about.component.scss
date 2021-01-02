@@ -1,5 +1,140 @@
 @import "../../scss/variables";
 
-p{
+
+.about{
+  display: flex;
+  padding-top: 50px;
+  max-width: 1100px;
+  width: 100%;
+  min-height: 600px;
+  background: url(../../assets/img/meCard-white1.png) right bottom no-repeat;
+  position: relative;
+  font-family: Garamond, serif;
   color: $text;
+}
+
+.header{
+  border-bottom: 4px solid #000000;
+  width: 200px;
+  font-size: xx-large !important;
+  font-family: Garamond, serif;
+  &__text{
+    font-weight: bold;
+    box-sizing:border-box;
+    margin-bottom: 0px;
+  }
+}
+
+.content{
+  font-size: 20px;
+  padding-right: 400px;
+  &__text{
+    padding-top: 20px;
+    line-height: 32px;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.66);
+  }
+}
+
+.education{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  column-gap: 20px;
+  &__border{
+    border-right: 2px solid #000000;
+    padding-right: 5px;
+  }
+  &__date{
+    font-size: small;
+  }
+}
+
+.education * {
+  margin: 0;
+  line-height: 20px;
+}
+
+.tabs{
+display: grid;
+grid-template-columns: 75px 1fr;
+column-gap: 10px;
+// min-height: 400px;
+  &__menu{
+
+    border-right: 2px solid #000000;
+    &__list{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      min-height:480;
+      &--item{
+        text-decoration: none;
+        &:hover{
+
+          // border: 2px solid #000000;
+          // border-radius: 25%;
+        }
+      }
+    }
+  }
+}
+img.animated {
+  animation: filter-animation 5s infinite;
+}
+
+@keyframes filter-animation {
+  0% {
+    filter: sepia(0) saturate(2);
+  }
+
+  50% {
+    filter: sepia(1) saturate(8);
+  }
+
+  100% {
+    filter: sepia(0) saturate(2);
+  }
+}
+
+@media (max-width: 1050px){
+  .about{
+    background-size: 300px 461px;
+    background-position: right;
+  }
+
+  .content {
+    padding-right: 270px;
+  }
+}
+
+@media (max-width:600px){
+  .content {
+    padding-right: 0;
+  }
+
+  .education{
+    grid-template-columns: 100px 1fr;
+    &--smallText{
+      font-size: medium;
+    }
+    &__date{
+      font-size: x-small;
+    }
+
+    &__details{
+      font-size: medium;
+    }
+  }
+  .about{
+    background: none;
+  }
+  .tabs{
+    grid-template-columns: 40px 1fr;
+  }
+  .nav-link{
+    padding: 0.5rem 0;
+  }
 }
