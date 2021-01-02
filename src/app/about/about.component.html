@@ -6,7 +6,7 @@
       <div class="tabs__menu">
         <ul ngbNav #nav="ngbNav" [activeId]="1" class="tabs__menu__list">
           <li [ngbNavItem]="1" class="tabs__menu__list--item">
-            <a ngbNavLink ><img tooltip="ABOUT ME" placement="right" src="../../assets/icons/user.png"
+            <a ngbNavLink class="nav-link"><img tooltip="ABOUT ME" placement="right" src="../../assets/icons/user.png"
                 alt="about me"></a>
             <ng-template ngbNavContent>
               <div class="tabs__template">
@@ -30,7 +30,7 @@
             </ng-template>
           </li>
           <li [ngbNavItem]="2" class="tabs__menu__list--item">
-            <a ngbNavLink ><img tooltip="EDUCATION" placement="right" src="../../assets/icons/graduation-hat.png"
+            <a ngbNavLink class="nav-link" ><img tooltip="EDUCATION" placement="right" src="../../assets/icons/graduation-hat.png"
                 alt="education"></a>
             <ng-template ngbNavContent>
               <div class="tabs__template">
@@ -38,19 +38,19 @@
                   <h1 class="header__text">Education</h1>
                 </div>
                 <div class="content__text education">
-                  <div class="education__border">
+                  <div class="education__border education--smallText">
                     <p>KUL im. Jana Pawła II w Lublinie</p>
                     <p class="education__date">10.2015 - 07.2018</p>
                   </div>
                   <div>
-                    <p>Licencjackie, <strong>Informatyka</strong> <br> spec. Programowanie</p>
+                    <p class="education__details">Licencjackie, <strong>Informatyka</strong> <br> spec. Programowanie</p>
                   </div>
                 </div>
               </div>
             </ng-template>
           </li>
           <li [ngbNavItem]="3" class="tabs__menu__list--item">
-            <a ngbNavLink ><img tooltip="EXPERIENCE" placement="right" src="../../assets/icons/suitcase.png"
+            <a ngbNavLink class="nav-link"><img tooltip="EXPERIENCE" placement="right" src="../../assets/icons/suitcase.png"
                 alt="EXPERIENCE"></a>
             <ng-template ngbNavContent>
               <app-experience></app-experience>

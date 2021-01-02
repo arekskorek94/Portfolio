@@ -79,3 +79,16 @@
   border: .3px groove #8B94A3;
   border-radius: 10px;
 }
+
+@media (max-width:600px){
+  .job{
+    // display: grid;
+    grid-template-columns: none;
+    grid-template-rows: auto 1fr;
+    &__button{
+      width: auto;
+      padding: 12px 12px;
+    }
+  }
+
+}

@@ -75,7 +75,7 @@ column-gap: 10px;
         &:hover{
 
           // border: 2px solid #000000;
-          border-radius: 25%;
+          // border-radius: 25%;
         }
       }
     }
@@ -107,5 +107,34 @@ img.animated {
 
   .content {
     padding-right: 270px;
+  }
+}
+
+@media (max-width:600px){
+  .content {
+    padding-right: 0;
+  }
+
+  .education{
+    grid-template-columns: 100px 1fr;
+    &--smallText{
+      font-size: medium;
+    }
+    &__date{
+      font-size: x-small;
+    }
+
+    &__details{
+      font-size: medium;
+    }
+  }
+  .about{
+    background: none;
+  }
+  .tabs{
+    grid-template-columns: 40px 1fr;
+  }
+  .nav-link{
+    padding: 0.5rem 0;
   }
 }

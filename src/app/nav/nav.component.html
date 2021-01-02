@@ -1,11 +1,20 @@
 <div class="nav__container">
   <nav class="navigation">
     <div class="navigation__logo">
-      <h1>AREK SKOREK</h1>
+      <h1 class="navigation__logo__name">AREK SKOREK</h1>
       <p class="navigation__position">Fullstack .NET developer</p>
     </div>
-    <div >
-      <ul class="navigation__list">
+    <div>
+      <div class="hamburger"
+      [ngClass]="{'is-active': hamburgerToggle}"
+      (click)="hamburgerToggleEvent()">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+      <ul class="navigation__list"
+      [ngClass]="{'is-active__list': hamburgerToggle}"
+      >
         <li class="navigation__list__item"><a class="link__decoration--none" [routerLink]="['/about']">ABOUT ME</a></li>
         <li class="navigation__list__item">EXPERIENCE</li>
         <li class="navigation__list__item">HOBBY</li>
