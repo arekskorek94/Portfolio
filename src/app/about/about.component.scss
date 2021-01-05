@@ -81,6 +81,10 @@ column-gap: 10px;
     }
   }
 }
+
+.tabs__template:not(:last-child){
+  padding-bottom: 20px;
+}
 img.animated {
   animation: filter-animation 5s infinite;
 }

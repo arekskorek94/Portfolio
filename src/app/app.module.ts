@@ -12,6 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ExperienceComponent } from './about/experience/experience.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     NavComponent,
     AboutComponent,
     ExperienceComponent,
-    ResponsibilitiesComponent
+    ResponsibilitiesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
